@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "padrao";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: "decorativa";
+    src: url(../fonts/Ubuntu-Bold.ttf);
+}
+
+$fonte-padrao: "padrao";
+$fonte-decorativa: "decorativa";
