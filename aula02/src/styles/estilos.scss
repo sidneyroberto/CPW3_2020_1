@@ -98,8 +98,13 @@ body {
 
     * {
         display: table-cell;
-        width: calc(100%/3);
         vertical-align: middle;
+    }
+
+    .copyright,
+    .contato,
+    .poweredBy {
+        width: calc(100%/3);
     }
 
     a {
@@ -111,7 +116,7 @@ body {
     .copyright {
         padding-left: 20px;
         font-family: $fonte-secundaria;
-        font-size: 80%;
+        font-size: 120%;
     }
 
     .contato {
@@ -122,6 +127,7 @@ body {
 
         h3 {
             font-family: $fonte-secundaria;
+            font-size: 140%;
         }
 
         div {
