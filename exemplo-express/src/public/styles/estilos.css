@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'decorativa';
+  src: url(../fonts/BowlbyOneSC-Regular.ttf); }
+
+@font-face {
+  font-family: 'padrao';
+  src: url(../fonts/Montserrat-Regular.ttf); }
+
+@font-face {
+  font-family: 'negrito';
+  src: url(../fonts/Montserrat-Bold.ttf); }
+
+body {
+  margin: 0; }
+
+#banner {
+  background-color: #2c82c9;
+  color: white;
+  text-align: center;
+  padding: 50px 0px 30px 0px; }
+  #banner h1 {
+    font-family: "decorativa";
+    font-size: 250%;
+    text-shadow: 3px 3px black; }
+  #banner p {
+    font-family: "padrao"; }
+
+#centro {
+  display: flex;
+  font-family: "padrao"; }
+
+#menu {
+  width: 20%;
+  background-color: #22313f;
+  color: white;
+  padding: 20px 0px 40px 20px; }
+
+#menu span {
+  font-size: 150%;
+  font-family: "negrito"; }
+
+#menu ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 120%; }
+
+#menu a {
+  text-decoration: none;
+  color: white; }
+
+#conteudo {
+  width: 90%;
+  padding: 10px;
+  text-align: center;
+  margin: auto; }
+
+#rodape {
+  background-color: #34495e;
+  color: white;
+  padding: 20px;
+  font-size: 80%;
+  font-family: "negrito"; }
+
+#cadastroCliente input {
+  display: block;
+  margin: auto; }
+  #cadastroCliente input[type=text], #cadastroCliente input[type=email] {
+    height: 25px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    text-align: center;
+    width: 300px;
+    background-color: #f6f6f6;
+    color: #555;
+    font-size: 95%;
+    padding: 3px; }
+    #cadastroCliente input[type=text]:focus, #cadastroCliente input[type=email]:focus {
+      background-color: white; }
+  #cadastroCliente input[type=submit] {
+    margin-top: 10px;
+    background-color: #336e7b;
+    color: white;
+    font-size: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; }
+
+#visualizacaoClientes {
+  margin-top: 50px; }
+  #visualizacaoClientes table {
+    margin: auto;
+    width: 60%;
+    border-collapse: collapse; }
+  #visualizacaoClientes thead {
+    background-color: #336e7b; }
+    #visualizacaoClientes thead tr {
+      height: 35px;
+      color: white; }
+  #visualizacaoClientes tbody tr {
+    height: 25px; }
+    #visualizacaoClientes tbody tr:nth-child(even) {
+      background-color: #e4f1fe; }
+  #visualizacaoClientes #painelBotoesTabela {
+    margin-top: 20px; }
+    #visualizacaoClientes #painelBotoesTabela img {
+      width: 20px;
+      margin: 5px 20px; }
