@@ -1,8 +1,11 @@
 import express from 'express';
 import path from 'path';
 import bodyParser from 'body-parser';
+import session from 'express-session';
 
 import rotasPaginas from './routes/paginas';
+import config from './config';
+
 
 const app = express();
 
@@ -23,6 +26,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({
     extended: false
 }));
+
+/**
+ * Configuração de sessão de forma simples
+ */
+app.use(session({ secret: config.SECRET, resave: false, saveUninitialized: true }));
 
 
 /**
